@@ -1,0 +1,2 @@
+execute if predicate biomebloodshed:in_center run setblock ~ ~ ~ pink_shulker_box{LootTable:"biomebloodshed:common"}
+execute unless predicate biomebloodshed:in_center run setblock ~ ~ ~ purple_shulker_box{LootTable:"biomebloodshed:rare"}
