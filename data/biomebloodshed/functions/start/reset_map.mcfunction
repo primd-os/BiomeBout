@@ -10,3 +10,4 @@ effect give @a[x=0] instant_health 1 10 true
 kill @e[x=0,type=!player,type=!marker]
 scoreboard players set @e[x=0,tag=hub.border] hub.borderChangeLength 0
 scoreboard players set @e[x=0,tag=hub.border] hub.borderSize 30000
+scoreboard players set @e[x=0,tag=hub.border] hub.borderCeiling 30000000

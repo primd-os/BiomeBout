@@ -1,2 +1,2 @@
-summon guardian ~ ~ ~ {PersistenceRequired :1b}
+summon guardian ~ ~ ~ {PersistenceRequired:1b,Silent:1b}
 setblock ~ ~ ~ water

@@ -1,0 +1,1 @@
+execute in biomebloodshed:game run tellraw @a[x=0] {"text":"The game will start in 3 seconds","color":"green"}
