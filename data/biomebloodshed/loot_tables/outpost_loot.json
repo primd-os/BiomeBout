@@ -40,8 +40,8 @@
         {
           "function": "minecraft:set_count",
           "count": {
-            "min": 2,
-            "max": 3
+            "min": 4,
+            "max": 5
           }
         }
       ]
