@@ -12,9 +12,9 @@ gamemode adventure @a[x=0]
 effect give @a[x=0] weakness 17 0 true
 effect give @a[x=0] minecraft:levitation 10 255 true
 effect give @a[x=0] invisibility 17 0 true
-schedule function biomebloodshed:start/start_game 10s
-schedule function biomebloodshed:start/start_warn 7s
-tellraw @a[x=0] {"text":"The game will start in 10 seconds","color":"green"}
+schedule function biomebloodshed:start/start_game 15s
+schedule function biomebloodshed:start/start_warn 12s
+tellraw @a[x=0] {"text":"The game will start in 15 seconds","color":"green"}
 xp set @a[x=0] 0 points
 xp set @a[x=0] 0 levels
 

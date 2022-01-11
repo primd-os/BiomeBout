@@ -1,6 +1,8 @@
+execute if score playerCount bb.Variables matches 1 run title @a[x=0] title [{"selector":"@a[gamemode=survival]"},{"text": " Wins!"}]
+
 forceload add -100 -100 100 100
-summon minecraft:marker 0 0 -120 {Tags: ["bb.clearMap"]}
-scoreboard players set @e[type=marker,tag=bb.clearMap,x=0] bb.clearZ -120
+summon minecraft:marker 0 0 -130 {Tags: ["bb.clearMap"]}
+scoreboard players set @e[type=marker,tag=bb.clearMap,x=0] bb.clearZ -130
 scoreboard players set IsReloading bb.Variables 1
 gamemode spectator @a[x=0]
 effect clear @a[x=0]

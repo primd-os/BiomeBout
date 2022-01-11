@@ -1,5 +1,4 @@
 gamemode spectator @s
-clear @s
 tellraw @a[x=0] [{"selector":"@s"}," has died"]
 scoreboard players set @s bb.deaths 0
 
@@ -51,3 +50,5 @@ item replace block 0 127 0 container.12 from entity @s armor.legs
 item replace block 0 127 0 container.13 from entity @s armor.feet
 loot spawn ~ ~ ~ mine 0 127 0 air{drop_contents: 1b}
 setblock 0 127 0 air
+
+clear @s
