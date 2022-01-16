@@ -34,3 +34,4 @@ execute if score Rand bb.Variables matches 9 run data modify storage biomebloods
 execute if score Rand bb.Variables matches 9 positioned ~ ~ ~ run function biomebloodshed:start/place_island
 
 kill @s
+execute unless entity @e[type=marker,x=0,tag=bb.IslandSpawner,limit=1] run function biomebloodshed:start/generate_end_island

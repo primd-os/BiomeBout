@@ -25,5 +25,7 @@ scoreboard players operation Rand bb.Variables %= modulo bb.Variables
 execute if score Rand bb.Variables matches 0 run data modify block ~ ~ ~ mirror set value "NONE"
 execute if score Rand bb.Variables matches 1 run data modify block ~ ~ ~ mirror set value "LEFT_RIGHT"
 
+scoreboard players set Rand bb.Variables -1
+
 setblock ~ ~1 ~ redstone_block
 fill ~ ~ ~ ~ ~1 ~ air
