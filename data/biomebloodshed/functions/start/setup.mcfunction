@@ -7,3 +7,5 @@ team add bb.BiomeBloodshed
 team modify bb.BiomeBloodshed prefix {"text": "Biome Bout | "}
 team modify bb.BiomeBloodshed collisionRule always
 team modify bb.BiomeBloodshed friendlyFire true
+
+function biomebloodshed:start/main
