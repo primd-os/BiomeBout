@@ -1,3 +1,4 @@
+execute if score playerCount bb.Variables matches 1 run title @a[x=0] times 10 60 10
 execute if score playerCount bb.Variables matches 1 run title @a[x=0] title [{"selector":"@a[gamemode=survival]","color":"yellow"},{"text": " Wins!","color":"yellow"}]
 
 forceload add -100 -100 100 100
@@ -17,3 +18,4 @@ scoreboard players set @e[x=0,tag=hub.border] hub.borderCeiling 30000000
 schedule clear biomebloodshed:start/start_game
 schedule clear biomebloodshed:start/start_warn
 schedule clear biomebloodshed:start/enable_falldamage
+scoreboard players set shrinkDelay bb.Variables -1

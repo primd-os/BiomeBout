@@ -11,3 +11,6 @@ execute in biomebloodshed:game run scoreboard players set @a[x=0] hub.fallDmgPer
 execute in biomebloodshed:game run forceload remove all
 execute in biomebloodshed:game as @a[x=0] at @s run playsound minecraft:block.note_block.bell master @s
 schedule function biomebloodshed:start/enable_falldamage 7s replace
+
+kill @e[type=marker,x=0,tag=bb.IslandSpawner,tag=bb.ToRemove]
+scoreboard players set IsReloading bb.Variables 0

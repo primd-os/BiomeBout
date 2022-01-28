@@ -1,0 +1,1 @@
+data modify storage hub:hub navigation_book append value '["- ",{"text":"[","extra":[{"text":"BiomeBout","color":"dark_green"},"]"],"color":"black","clickEvent":{"action":"run_command","value":"/function biomebloodshed:start/join_game"}}]'

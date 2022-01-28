@@ -6,7 +6,8 @@ scoreboard players set totalPlayerCount bb.Variables 0
 execute in biomebloodshed:game as @a[x=0] run scoreboard players add totalPlayerCount bb.Variables 1
 execute in biomebloodshed:game if score playerCount bb.Variables matches 0 if score totalPlayerCount bb.Variables matches 1 if score IsReloading bb.Variables matches 0 run function biomebloodshed:start/reset_map
 execute in biomebloodshed:game if score playerCount bb.Variables matches 0..1 if score totalPlayerCount bb.Variables matches 2.. if score IsReloading bb.Variables matches 0 run function biomebloodshed:start/reset_map
-execute in biomebloodshed:game as @e[type=marker,x=0,tag=bb.IslandSpawner,limit=1] at @s run function biomebloodshed:start/generate_island
+execute in biomebloodshed:game as @e[type=marker,x=0,tag=bb.IslandSpawner,tag=bb.ToRemove,limit=1] at @s run function biomebloodshed:start/mark_removals
+execute in biomebloodshed:game as @e[type=marker,x=0,tag=bb.IslandSpawner,tag=!bb.ToRemove,limit=1] at @s run function biomebloodshed:start/generate_island
 execute if score shrinkDelay bb.Variables matches 0.. run scoreboard players remove shrinkDelay bb.Variables 1
 execute if score shrinkDelay bb.Variables matches 0 run function biomebloodshed:start/shrink_map
 schedule function biomebloodshed:start/main 1t replace
