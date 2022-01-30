@@ -1,1 +1,1 @@
-setblock ~ ~ ~ green_shulker_box{LootTable:"biomebloodshed:temple_loot"}
+setblock ~ ~ ~ cyan_shulker_box{LootTable:"biomebloodshed:temple_loot"}

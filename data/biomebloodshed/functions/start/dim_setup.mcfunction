@@ -1,6 +1,6 @@
 clear @a[x=0]
-tp @a[x=0] 0 127 0
-fill -6 127 -6 6 127 6 barrier
+tp @a[x=0] 0 127.5 0
+fill -6 127 -6 6 127 6 glass_pane
 fill -5 127 -5 5 127 5 air
 
 execute unless entity @e[x=0,tag=hub.border] run summon marker 0 1000 0 {Tags:["hub.border"]}

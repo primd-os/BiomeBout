@@ -1,0 +1,1 @@
+execute if score @s warp = GameId bb.Variables run function biomebloodshed:start/join_game

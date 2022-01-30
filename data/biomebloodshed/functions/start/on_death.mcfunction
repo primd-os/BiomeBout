@@ -1,5 +1,7 @@
 gamemode spectator @s
+team leave @s
 tellraw @a[x=0] [{"selector":"@s"}," has died"]
+team join bb.BiomeBloodshed @s
 scoreboard players set @s bb.deaths 0
 
 setblock 0 127 0 yellow_shulker_box

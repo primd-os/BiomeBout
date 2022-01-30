@@ -1,109 +1,73 @@
 {
+  "type": "minecraft:chest",
   "pools": [
     {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
       "entries": [
         {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:cooked_beef",
           "functions": [
             {
+              "function": "minecraft:set_count",
               "count": {
-                "max": 2,
-                "min": 0
-              },
-              "function": "minecraft:set_count"
+                "min": 1,
+                "max": 2
+              }
             }
-          ],
-          "name": "minecraft:cooked_beef",
-          "type": "minecraft:item"
-        }
-      ],
-      "rolls": 1
-    },
-    {
-      "entries": [
+          ]
+        },
         {
-          "conditions": [
-            {
-              "chance": 0.4,
-              "condition": "minecraft:random_chance"
-            }
-          ],
-          "name": "minecraft:apple",
-          "type": "minecraft:item"
-        }
-      ],
-      "rolls": 1
-    },
-    {
-      "entries": [
-        {
-          "name": "minecraft:emerald_block",
-          "type": "minecraft:item"
-        }
-      ],
-      "rolls": 1
-    },
-    {
-      "entries": [
-        {
-          "conditions": [
-            {
-              "chance": 0.3,
-              "condition": "minecraft:random_chance"
-            }
-          ],
           "type": "minecraft:item",
-          "name": "minecraft:netherite_ingot"
+          "weight": 1,
+          "name": "minecraft:apple"
         }
-      ],
-      "rolls": 1
+      ]
     },
     {
-      "conditions": [
-        {
-          "chance": 0.4,
-          "condition": "minecraft:random_chance"
-        }
-      ],
+      "rolls": 1,
       "entries": [
         {
-          "name": "minecraft:iron_pickaxe",
-          "type": "minecraft:item"
-        },
-        {
-          "name": "minecraft:iron_axe",
-          "type": "minecraft:item"
+          "type": "minecraft:item",
+          "name": "minecraft:emerald_block"
         }
-      ],
-      "rolls": 1
+      ]
     },
     {
-      "conditions": [
-        {
-          "chance": 0.5,
-          "condition": "minecraft:random_chance"
-        }
-      ],
+      "rolls": 1,
       "entries": [
         {
-          "name": "iron_helmet",
-          "type": "item"
+          "type": "minecraft:item",
+          "name": "minecraft:iron_pickaxe"
         },
         {
-          "name": "iron_chestplate",
-          "type": "item"
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe"
         },
         {
-          "name": "iron_leggings",
-          "type": "item"
+          "type": "minecraft:item",
+          "name": "minecraft:iron_helmet"
         },
         {
-          "name": "iron_boots",
-          "type": "item"
+          "type": "minecraft:item",
+          "name": "minecraft:iron_chestplate"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_leggings"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_boots"
         }
-      ],
-      "rolls": 1
+      ]
     },
     {
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
@@ -117,99 +81,97 @@
           "type": "minecraft:item",
           "name": "minecraft:powder_snow_bucket"
         }
-      ],
-      "rolls": 1
+      ]
     },
     {
+      "rolls": 1,
       "entries": [
         {
-          "functions": [
-            {
-              "count": {
-                "max": 2,
-                "min": 1
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
+          "type": "minecraft:item",
           "name": "minecraft:diamond",
-          "type": "minecraft:item"
-        }
-      ],
-      "rolls": 1
-    },
-    {
-      "entries": [
-        {
           "functions": [
             {
+              "function": "minecraft:set_count",
               "count": {
-                "max": 3,
-                "min": 2
-              },
-              "function": "minecraft:set_count"
+                "min": 0,
+                "max": 1
+              }
             }
-          ],
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
           "type": "minecraft:item",
-          "name": "minecraft:leather"
-        }
-      ],
-      "rolls": 1
-    },
-    {
-      "entries": [
-        {
+          "name": "minecraft:leather",
           "functions": [
             {
+              "function": "minecraft:set_count",
               "count": {
-                "max": 16,
-                "min": 8
-              },
-              "function": "minecraft:set_count"
+                "min": 2,
+                "max": 3
+              }
             }
-          ],
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
           "type": "minecraft:item",
-          "name": "minecraft:oak_planks"
-        }
-      ],
-      "rolls": 1
-    },
-    {
-      "entries": [
-        {
+          "name": "minecraft:oak_planks",
           "functions": [
             {
+              "function": "minecraft:set_count",
               "count": {
-                "max": 16,
-                "min": 8
-              },
-              "function": "minecraft:set_count"
+                "min": 8,
+                "max": 16
+              }
             }
-          ],
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
           "name": "minecraft:cobblestone",
-          "type": "minecraft:item"
-        }
-      ],
-      "rolls": 1
-    },
-    {
-      "entries": [
-        {
           "functions": [
             {
+              "function": "minecraft:set_count",
               "count": {
-                "max": 5,
-                "min": 3
-              },
-              "function": "minecraft:set_count"
+                "min": 8,
+                "max": 16
+              }
             }
-          ],
-          "name": "minecraft:experience_bottle",
-          "type": "minecraft:item"
+          ]
         }
-      ],
-      "rolls": 1
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 5
+              }
+            }
+          ]
+        }
+      ]
     }
-  ],
-  "type": "minecraft:chest"
+  ]
 }

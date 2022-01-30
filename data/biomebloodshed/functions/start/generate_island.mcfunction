@@ -1,4 +1,4 @@
-scoreboard players set modulo bb.Variables 11
+scoreboard players set modulo bb.Variables 12
 execute store result score Rand bb.Variables run data get entity @s UUID[3] 
 scoreboard players operation Rand bb.Variables %= modulo bb.Variables
 
@@ -36,5 +36,7 @@ execute if score Rand bb.Variables matches 9 positioned ~ ~ ~ run function biome
 execute if score Rand bb.Variables matches 10 run data modify storage biomebloodshed:name name set value "biomebloodshed:islands/lush_cave"
 execute if score Rand bb.Variables matches 10 positioned ~ ~10 ~ run function biomebloodshed:start/place_island
 
-kill @s
-execute unless entity @e[type=marker,x=0,tag=bb.IslandSpawner,limit=1] run function biomebloodshed:start/generate_end_island
+execute if score Rand bb.Variables matches 11 run data modify storage biomebloodshed:name name set value "biomebloodshed:islands/bastion"
+execute if score Rand bb.Variables matches 11 positioned ~ ~ ~ run function biomebloodshed:start/place_island
+
+tag @s add bb.Completed

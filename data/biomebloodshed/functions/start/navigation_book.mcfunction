@@ -1,1 +1,3 @@
-data modify storage hub:hub navigation_book append value '["- ",{"text":"[","extra":[{"text":"BiomeBout","color":"dark_green"},"]"],"color":"black","clickEvent":{"action":"run_command","value":"/function biomebloodshed:start/join_game"}}]'
+execute store result score GameId bb.Variables run data get storage hub:hub navigation_book
+scoreboard players add GameId bb.Variables 1
+data modify storage hub:hub navigation_book append value '["- ",{"text":"[","extra":[{"text":"Biome Bout","color":"dark_green"},"]"],"color":"#71AB65"}]'
