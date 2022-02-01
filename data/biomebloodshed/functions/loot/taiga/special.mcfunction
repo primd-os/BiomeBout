@@ -1,0 +1,1 @@
+setblock ~ ~ ~ cyan_shulker_box{LootTable:"biomebloodshed:dungeon_loot"}

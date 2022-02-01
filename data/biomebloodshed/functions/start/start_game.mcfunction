@@ -13,11 +13,10 @@ execute in biomebloodshed:game run forceload remove all
 execute in biomebloodshed:game as @a[x=0] at @s run playsound minecraft:block.note_block.bell master @s
 
 schedule function biomebloodshed:start/enable_falldamage 7s replace
-execute in biomebloodshed:game run title @a[x=0] times 0 25 0
-execute in biomebloodshed:game run title @a[x=0] title {"text":"Elytras deploy in","color":"green"}
+execute in biomebloodshed:game run title @a[x=0] title {"text":""}
 execute in biomebloodshed:game run title @a[x=0] subtitle {"text":"GO!","color":"green"}
 execute in biomebloodshed:game run title @a[x=0] times 0 140 10
-execute in biomebloodshed:game run title @a[x=0] actionbar {"text":"Elytra will disappear in 7 Seconds","color":"green"}
+execute in biomebloodshed:game run title @a[x=0] actionbar {"text":"Elytra will disappear in 7 Seconds","color":"dark_blue"}
 
 kill @e[type=marker,x=0,tag=bb.IslandSpawner,tag=bb.ToRemove]
 execute in biomebloodshed:game run function biomebloodshed:start/generate_end_island
