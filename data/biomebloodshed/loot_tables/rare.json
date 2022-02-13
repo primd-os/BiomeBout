@@ -2,10 +2,7 @@
   "type": "minecraft:chest",
   "pools": [
     {
-      "rolls": {
-        "min": 1,
-        "max": 2
-      },
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
@@ -42,27 +39,87 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_pickaxe"
+          "name": "minecraft:diamond"
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_axe"
+          "weight": 1000,
+          "name": "minecraft:iron_helmet",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "head": {
+                    "items": [
+                      "minecraft:air"
+                    ]
+                  }
+                }
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_helmet"
+          "weight": 1000,
+          "name": "minecraft:iron_chestplate",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "chest": {
+                    "items": [
+                      "minecraft:air"
+                    ]
+                  }
+                }
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_chestplate"
+          "weight": 1000,
+          "name": "minecraft:iron_leggings",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "legs": {
+                    "items": [
+                      "minecraft:air"
+                    ]
+                  }
+                }
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_leggings"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_boots"
+          "weight": 1000,
+          "name": "minecraft:iron_boots",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "feet": {
+                    "items": [
+                      "minecraft:air"
+                    ]
+                  }
+                }
+              }
+            }
+          ]
         }
       ]
     },
@@ -76,46 +133,6 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:water_bucket"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:powder_snow_bucket"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 0,
-                "max": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:leather",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 3
-              }
-            }
-          ]
         }
       ]
     },

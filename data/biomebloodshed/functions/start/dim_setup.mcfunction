@@ -43,6 +43,9 @@ summon marker 0 50 0 {Tags:["bb.IslandSpawner"]}
 summon marker 0 50 0 {Tags:["bb.IslandSpawner"]}
 summon marker 0 50 0 {Tags:["bb.IslandSpawner"]}
 summon marker 0 50 0 {Tags:["bb.IslandSpawner"]}
+summon marker 0 50 0 {Tags:["bb.IslandSpawner"]}
+summon marker 0 50 0 {Tags:["bb.IslandSpawner"]}
+
 execute as @e[type=marker,x=0,tag=bb.IslandSpawner] at @s run function biomebloodshed:start/randomize_position
 
 execute as @e[type=marker,x=0,tag=bb.IslandSpawner] at @s as @e[type=marker,tag=bb.IslandSpawner,distance=0.01..35] run tag @s[dx=100,y=0,dy=100,z=-100,dz=200] add bb.ToRemove
