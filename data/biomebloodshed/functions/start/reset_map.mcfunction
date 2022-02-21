@@ -20,5 +20,5 @@ scoreboard players set @e[x=0,tag=hub.border] hub.borderCeiling 30000000
 schedule clear biomebloodshed:start/start_game
 schedule clear biomebloodshed:start/start_warn
 schedule clear biomebloodshed:start/enable_falldamage
-schedule clear biomebloodshed:start/lower_border
+schedule clear biomebloodshed:main/lower_border
 scoreboard players set shrinkDelay bb.Variables -1

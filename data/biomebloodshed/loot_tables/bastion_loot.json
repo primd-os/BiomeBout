@@ -3,6 +3,44 @@
   "pools": [
     {
       "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:ancient_debris",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 8,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "minecraft:netherite_scrap",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:netherite_ingot"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
       "bonus_rolls": 0,
       "entries": [
         {
@@ -33,36 +71,6 @@
             },
             {
               "function": "minecraft:enchant_randomly"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 12,
-          "name": "minecraft:ancient_debris",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 4
-              },
-              "add": false
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 6,
-          "name": "minecraft:netherite_scrap",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 4
-              },
-              "add": false
             }
           ]
         },

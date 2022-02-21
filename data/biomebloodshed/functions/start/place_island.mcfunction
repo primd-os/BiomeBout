@@ -1,3 +1,7 @@
+setblock ~ 0 ~ command_block
+data modify block ~ 0 ~ Command set from storage biomebloodshed:name command
+data modify block ~ 0 ~ auto set value 1b
+
 setblock ~ ~ ~ structure_block{mode:"LOAD"}
 data modify block ~ ~ ~ name set from storage biomebloodshed:name name
 

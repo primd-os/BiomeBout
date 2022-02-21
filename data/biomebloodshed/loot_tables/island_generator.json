@@ -9,7 +9,23 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"biomebloodshed:islands/desert_temple_island\"]}"
+              "tag": "{pages:[\"biomebloodshed:islands/desert_temple_island\",\"scoreboard players add desert_temple bb.IslandCounts 1\"]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "desert_temple"
+                },
+                "score": "bb.IslandCounts"
+              },
+              "range": {
+                "max": 2
+              }
             }
           ]
         },
@@ -19,7 +35,23 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"biomebloodshed:islands/ocean_monument_island\"]}"
+              "tag": "{pages:[\"biomebloodshed:islands/ocean_monument_island\",\"scoreboard players add ocean_monument bb.IslandCounts 1\"]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "ocean_monument"
+                },
+                "score": "bb.IslandCounts"
+              },
+              "range": {
+                "max": 2
+              }
             }
           ]
         },
@@ -29,7 +61,23 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"biomebloodshed:islands/village_island_1\"]}"
+              "tag": "{pages:[\"biomebloodshed:islands/village_island_1\",\"scoreboard players add village_1 bb.IslandCounts 1\"]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "village_1"
+                },
+                "score": "bb.IslandCounts"
+              },
+              "range": {
+                "max": 2
+              }
             }
           ]
         },
@@ -39,7 +87,23 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"biomebloodshed:islands/village_island_2\"]}"
+              "tag": "{pages:[\"biomebloodshed:islands/village_island_2\",\"scoreboard players add village_2 bb.IslandCounts 1\"]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "village_2"
+                },
+                "score": "bb.IslandCounts"
+              },
+              "range": {
+                "max": 2
+              }
             }
           ]
         },
@@ -49,7 +113,23 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"biomebloodshed:islands/end_ship\"]}"
+              "tag": "{pages:[\"biomebloodshed:islands/end_ship\",\"scoreboard players add end_ship bb.IslandCounts 1\"]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "end_ship"
+                },
+                "score": "bb.IslandCounts"
+              },
+              "range": {
+                "max": 2
+              }
             }
           ]
         },
@@ -59,7 +139,23 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"biomebloodshed:islands/swamp\"]}"
+              "tag": "{pages:[\"biomebloodshed:islands/swamp\",\"scoreboard players add swamp bb.IslandCounts 1\"]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "swamp"
+                },
+                "score": "bb.IslandCounts"
+              },
+              "range": {
+                "max": 2
+              }
             }
           ]
         },
@@ -69,7 +165,23 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"biomebloodshed:islands/nether_fortress_island\"]}"
+              "tag": "{pages:[\"biomebloodshed:islands/nether_fortress_island\",\"scoreboard players add nether_fortress bb.IslandCounts 1\"]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "nether_fortress"
+                },
+                "score": "bb.IslandCounts"
+              },
+              "range": {
+                "max": 2
+              }
             }
           ]
         },
@@ -79,7 +191,23 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"biomebloodshed:islands/outpost\"]}"
+              "tag": "{pages:[\"biomebloodshed:islands/outpost\",\"scoreboard players add outpost bb.IslandCounts 1\"]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "outpost"
+                },
+                "score": "bb.IslandCounts"
+              },
+              "range": {
+                "max": 2
+              }
             }
           ]
         },
@@ -89,7 +217,23 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"biomebloodshed:islands/creeper_aw_man\"]}"
+              "tag": "{pages:[\"biomebloodshed:islands/creeper_aw_man\",\"scoreboard players add aw_man bb.IslandCounts 1\"]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "aw_man"
+                },
+                "score": "bb.IslandCounts"
+              },
+              "range": {
+                "max": 2
+              }
             }
           ]
         },
@@ -99,7 +243,23 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"biomebloodshed:islands/coral_reef_island\"]}"
+              "tag": "{pages:[\"biomebloodshed:islands/coral_reef_island\",\"scoreboard players add coral_reef bb.IslandCounts 1\"]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "coral_reef"
+                },
+                "score": "bb.IslandCounts"
+              },
+              "range": {
+                "max": 2
+              }
             }
           ]
         },
@@ -109,7 +269,23 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"biomebloodshed:islands/lush_cave\"]}"
+              "tag": "{pages:[\"biomebloodshed:islands/lush_cave\",\"scoreboard players add lush_cave bb.IslandCounts 1\"]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "lush_cave"
+                },
+                "score": "bb.IslandCounts"
+              },
+              "range": {
+                "max": 2
+              }
             }
           ]
         },
@@ -119,7 +295,23 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"biomebloodshed:islands/bastion\"]}"
+              "tag": "{pages:[\"biomebloodshed:islands/bastion\",\"scoreboard players add bastion bb.IslandCounts 1\"]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "bastion"
+                },
+                "score": "bb.IslandCounts"
+              },
+              "range": {
+                "max": 2
+              }
             }
           ]
         },
@@ -129,7 +321,23 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"biomebloodshed:islands/taiga\"]}"
+              "tag": "{pages:[\"biomebloodshed:islands/taiga\",\"scoreboard players add taiga bb.IslandCounts 1\"]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "taiga"
+                },
+                "score": "bb.IslandCounts"
+              },
+              "range": {
+                "max": 2
+              }
             }
           ]
         },
@@ -139,7 +347,23 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"biomebloodshed:islands/badlands\"]}"
+              "tag": "{pages:[\"biomebloodshed:islands/badlands\",\"scoreboard players add badlands bb.IslandCounts 1\"]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "badlands"
+                },
+                "score": "bb.IslandCounts"
+              },
+              "range": {
+                "max": 2
+              }
             }
           ]
         },
@@ -149,7 +373,23 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"biomebloodshed:islands/mansion\"]}"
+              "tag": "{pages:[\"biomebloodshed:islands/mansion\",\"scoreboard players add mansion bb.IslandCounts 1\"]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "mansion"
+                },
+                "score": "bb.IslandCounts"
+              },
+              "range": {
+                "max": 2
+              }
             }
           ]
         }
