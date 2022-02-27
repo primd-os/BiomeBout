@@ -12,4 +12,4 @@ team modify bb.BiomeBloodshed collisionRule never
 team modify bb.BiomeBloodshed friendlyFire true
 team modify bb.BiomeBloodshed seeFriendlyInvisibles false
 
-function biomebloodshed:start/main
+function biomebloodshed:main/main

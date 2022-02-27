@@ -119,11 +119,42 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:lava_bucket"
+          "weight": 1000,
+          "name": "minecraft:lava_bucket",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "nbt": "{Inventory:[{id:\"minecraft:lava_bucket\"}]}"
+                }
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:water_bucket"
+          "weight": 1000,
+          "name": "minecraft:water_bucket",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "nbt": "{Inventory:[{id:\"minecraft:water_bucket\"}]}"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:bucket"
         }
       ]
     },

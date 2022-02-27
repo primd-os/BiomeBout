@@ -1,5 +1,8 @@
 execute as @e[type=marker,x=0,tag=bb.clearMap] at @s run function biomebloodshed:start/slow_clear_map_loop
-execute as @e[type=piglin,x=0] if data entity @s Brain.memories."minecraft:admiring_item"{ttl:60L} run data modify entity @s Brain.memories."minecraft:admiring_item" set value {ttl:1L}
+
+execute as @a[x=0,tag=!bb.hasClosePlayer] at @s if entity @a[distance=0.01..10] run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2 1
+execute as @a[x=0,tag=!bb.hasClosePlayer] at @s if entity @a[distance=0.01..10] run tag @s add bb.hasClosePlayer
+execute as @a[x=0,tag=bb.hasClosePlayer] at @s unless entity @a[distance=0.01..10] run tag @s remove bb.hasClosePlayer
 
 execute as @a[x=0] unless score @s bb.deaths matches 0 at @s run function biomebloodshed:main/on_death
 
