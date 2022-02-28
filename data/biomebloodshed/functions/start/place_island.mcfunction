@@ -39,5 +39,6 @@ execute if score Rand bb.Variables matches 1 store result block ~ ~ ~ posZ int 1
 scoreboard players set Rand bb.Variables -1
 
 setblock ~ ~1 ~ redstone_block
-fill ~ ~ ~ ~ ~1 ~ air
+fill ~ ~ ~ ~ ~ ~ air replace structure_block
+fill ~ ~1 ~ ~ ~1 ~ air replace redstone_block
 fill ~ 126 ~ ~ 127 ~ air

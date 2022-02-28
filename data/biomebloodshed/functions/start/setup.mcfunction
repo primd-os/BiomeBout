@@ -11,5 +11,6 @@ team modify bb.BiomeBloodshed prefix {"text": "Biome Bout | "}
 team modify bb.BiomeBloodshed collisionRule never
 team modify bb.BiomeBloodshed friendlyFire true
 team modify bb.BiomeBloodshed seeFriendlyInvisibles false
+team modify bb.BiomeBloodshed nametagVisibility never
 
 function biomebloodshed:main/main

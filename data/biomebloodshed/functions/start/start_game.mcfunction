@@ -5,7 +5,7 @@ execute in biomebloodshed:game run item replace entity @a[x=0] armor.chest with 
 execute in biomebloodshed:game run give @a[x=0] iron_pickaxe
 execute in biomebloodshed:game run scoreboard players set @e[x=0,tag=hub.border] hub.borderSize 23600
 execute in biomebloodshed:game run scoreboard players set @e[x=0,tag=hub.border] hub.borderCeiling 23600000
-scoreboard players set shrinkDelay bb.Variables 3600
+scoreboard players set shrinkDelay bb.Variables 4200
 execute in biomebloodshed:game run scoreboard players set @e[x=0,tag=hub.border] hub.borderSizeChange 0
 execute in biomebloodshed:game run scoreboard players set @e[x=0,tag=hub.border] hub.borderChangeLength 0
 execute in biomebloodshed:game run scoreboard players set @a[x=0] hub.fallDmgPercent 0

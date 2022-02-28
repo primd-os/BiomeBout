@@ -1,8 +1,8 @@
 execute as @e[type=marker,x=0,tag=bb.clearMap] at @s run function biomebloodshed:start/slow_clear_map_loop
 
-execute as @a[x=0,tag=!bb.hasClosePlayer] at @s if entity @a[distance=0.01..10] run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2 1
-execute as @a[x=0,tag=!bb.hasClosePlayer] at @s if entity @a[distance=0.01..10] run tag @s add bb.hasClosePlayer
-execute as @a[x=0,tag=bb.hasClosePlayer] at @s unless entity @a[distance=0.01..10] run tag @s remove bb.hasClosePlayer
+execute if score IsReloading bb.Variables matches 0 as @a[x=0,tag=!bb.hasClosePlayer,gamemode=!spectator] at @s if entity @a[distance=0.01..15,gamemode=!spectator] run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2 1
+execute as @a[x=0,tag=!bb.hasClosePlayer] at @s if entity @a[distance=0.01..15,gamemode=!spectator] run tag @s add bb.hasClosePlayer
+execute as @a[x=0,tag=bb.hasClosePlayer] at @s unless entity @a[distance=0.01..16,gamemode=!spectator] run tag @s remove bb.hasClosePlayer
 
 execute as @a[x=0] unless score @s bb.deaths matches 0 at @s run function biomebloodshed:main/on_death
 
