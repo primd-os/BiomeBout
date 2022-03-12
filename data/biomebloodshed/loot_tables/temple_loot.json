@@ -51,7 +51,7 @@
             {
               "function": "minecraft:set_enchantments",
               "enchantments": {
-                "minecraft:riptide": 3
+                "minecraft:riptide": 2
               }
             }
           ]

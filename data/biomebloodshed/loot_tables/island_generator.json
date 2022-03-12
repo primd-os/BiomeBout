@@ -392,6 +392,32 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:[\"biomebloodshed:islands/jungle\",\"scoreboard players add jungle bb.IslandCounts 1\"]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "jungle"
+                },
+                "score": "bb.IslandCounts"
+              },
+              "range": {
+                "max": 2
+              }
+            }
+          ]
         }
       ]
     }

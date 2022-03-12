@@ -5,6 +5,7 @@ execute as @a[x=0,tag=!bb.hasClosePlayer] at @s if entity @a[distance=0.01..15,g
 execute as @a[x=0,tag=bb.hasClosePlayer] at @s unless entity @a[distance=0.01..16,gamemode=!spectator] run tag @s remove bb.hasClosePlayer
 
 execute as @a[x=0] unless score @s bb.deaths matches 0 at @s run function biomebloodshed:main/on_death
+execute as @a[y=-128,dy=64] if predicate biomebloodshed:has_totem run function biomebloodshed:main/on_totem_death
 
 scoreboard players set playerCount bb.Variables 0
 execute as @a[x=0,gamemode=!spectator] run scoreboard players add playerCount bb.Variables 1
