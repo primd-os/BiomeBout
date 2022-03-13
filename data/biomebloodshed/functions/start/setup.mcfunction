@@ -2,6 +2,7 @@ scoreboard objectives add bb.clearZ dummy
 scoreboard objectives add bb.Variables dummy
 scoreboard objectives add bb.deaths deathCount
 scoreboard objectives add bb.IslandCounts dummy
+scoreboard objectives add bb.TotemDelay dummy
 
 scoreboard players set IsReloading bb.Variables 0
 execute in biomebloodshed:game run kill @e[type=!player,x=0]
