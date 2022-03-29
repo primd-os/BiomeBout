@@ -1,5 +1,6 @@
 {
     "values": [
-        "biomebloodshed:start/setup"
+        "biomebloodshed:start/setup",
+		"rx:load"
     ]
 }

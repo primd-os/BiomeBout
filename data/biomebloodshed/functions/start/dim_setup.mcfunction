@@ -9,13 +9,12 @@ scoreboard players set @e[x=0,tag=hub.border] hub.borderSize 20000
 scoreboard players set @e[x=0,tag=hub.border] hub.borderCeiling 20000000
 
 gamemode adventure @a[x=0]
-effect give @a[x=0] weakness 22 0 true
-effect give @a[x=0] minecraft:levitation 15 255 true
-effect give @a[x=0] invisibility 22 0 true
-schedule function biomebloodshed:start/start_game 15s
-scoreboard players set countdown bb.Variables 3
-schedule function biomebloodshed:start/start_warn 12s
-tellraw @a[x=0] {"text":"The game will start in 15 seconds","color":"green"}
+effect give @a[x=0] minecraft:levitation 30 255 true
+effect give @a[x=0] weakness 37 0 true
+effect give @a[x=0] invisibility 37 0 true
+effect give @a[x=0] resistance 37 4 true
+schedule function biomebloodshed:start/start_game 30s
+schedule function biomebloodshed:start/cancel_generation 15s
 xp set @a[x=0] 0 points
 xp set @a[x=0] 0 levels
 
