@@ -1,0 +1,1 @@
+execute if predicate biomebloodshed:in_dimension run function biomebloodshed:start/on_dimension_death

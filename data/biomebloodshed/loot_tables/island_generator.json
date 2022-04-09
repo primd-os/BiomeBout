@@ -61,7 +61,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"biomebloodshed:islands/village_island_1\",\"scoreboard players add village_1 bb.IslandCounts 1\"]}"
+              "tag": "{pages:[\"biomebloodshed:islands/village\",\"scoreboard players add village_1 bb.IslandCounts 1\"]}"
             }
           ],
           "conditions": [
@@ -87,7 +87,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"biomebloodshed:islands/village_island_2\",\"scoreboard players add village_2 bb.IslandCounts 1\"]}"
+              "tag": "{pages:[\"biomebloodshed:islands/snowy_village\",\"scoreboard players add village_2 bb.IslandCounts 1\"]}"
             }
           ],
           "conditions": [
@@ -202,32 +202,6 @@
                 "target": {
                   "type": "minecraft:fixed",
                   "name": "outpost"
-                },
-                "score": "bb.IslandCounts"
-              },
-              "range": {
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:written_book",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"biomebloodshed:islands/creeper_aw_man\",\"scoreboard players add aw_man bb.IslandCounts 1\"]}"
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "aw_man"
                 },
                 "score": "bb.IslandCounts"
               },
@@ -410,6 +384,32 @@
                 "target": {
                   "type": "minecraft:fixed",
                   "name": "jungle"
+                },
+                "score": "bb.IslandCounts"
+              },
+              "range": {
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:[\"biomebloodshed:islands/basalt_delta\",\"scoreboard players add basaltDelta bb.IslandCounts 1\"]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "basaltDelta"
                 },
                 "score": "bb.IslandCounts"
               },

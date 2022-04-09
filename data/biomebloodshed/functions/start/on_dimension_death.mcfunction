@@ -31,7 +31,6 @@ tag @s remove bb.Messaged
 tag @s remove dieMarked
 
 team join bb.BiomeBloodshed @s
-scoreboard players set @s bb.deaths 0
 
 setblock 0 127 0 yellow_shulker_box
 item replace block 0 127 0 container.0 from entity @s inventory.0
