@@ -7,6 +7,7 @@ execute unless entity @e[x=0,tag=hub.border] run summon marker 0 1000 0 {Tags:["
 scoreboard players set @e[x=0,tag=hub.border] hub.borderChangeLength 0
 scoreboard players set @e[x=0,tag=hub.border] hub.borderSize 20000
 scoreboard players set @e[x=0,tag=hub.border] hub.borderCeiling 20000000
+scoreboard players set GameState bb.Variables 0
 
 gamemode adventure @a[x=0]
 effect give @a[x=0] minecraft:levitation 30 255 true
@@ -48,5 +49,3 @@ summon marker 0 50 0 {Tags:["bb.IslandSpawner","bb.ToRemove"]}
 summon marker 0 50 0 {Tags:["bb.IslandSpawner","bb.ToRemove"]}
 
 execute as @e[type=marker,x=0,tag=bb.IslandSpawner] at @s run function biomebloodshed:start/randomize_position
-
-kill @s

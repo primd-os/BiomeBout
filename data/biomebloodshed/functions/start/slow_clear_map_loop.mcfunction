@@ -5,4 +5,5 @@ fill -140 0 ~-1 0 127 ~-1 air
 tp ~ ~ ~1
 scoreboard players add @s bb.clearZ 1
 kill @e[x=0,type=!player,type=!marker]
-execute as @s[scores={bb.clearZ=140..}] run function biomebloodshed:start/dim_setup
+execute as @s[scores={bb.clearZ=140..}] run scoreboard players set GameState bb.Variables -1
+execute as @s[scores={bb.clearZ=140..}] run kill @s
