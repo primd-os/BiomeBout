@@ -5,6 +5,8 @@ team leave @s
 scoreboard players operation $uid rx.temp = @s rx.death_uid
 execute as @a[scores={rx.kill_uid=1..},x=0] if score @s rx.kill_uid = $uid rx.temp run tag @s add bb.killed
 
+team leave @a[tag=bb.killed,x=0,limit=1]
+
 # basic death message
 execute if entity @a[tag=bb.killed,x=0,limit=1] run tag @s add dieMarked
 execute as @s[advancements={rx:death_cause/arrow=true},tag=dieMarked,tag=!bb.Messaged] run tellraw @a[x=0] ["", {"selector":"@s"}, " was shot by ", {"selector":"@a[tag=bb.killed,x=0,limit=1]"}, "'s arrow"]
@@ -13,7 +15,7 @@ execute as @s[advancements={rx:death_cause/explosion=true},tag=dieMarked,tag=!bb
 execute as @s[advancements={rx:death_cause/explosion=true},tag=dieMarked,tag=!bb.Messaged] run tag @s add bb.Messaged
 execute as @s[advancements={rx:death_cause/fire=true},tag=dieMarked,tag=!bb.Messaged] run tellraw @a[x=0] ["", {"selector":"@s"}, " was burned to death by ", {"selector":"@a[tag=bb.killed,x=0,limit=1]"}]
 execute as @s[advancements={rx:death_cause/fire=true},tag=dieMarked,tag=!bb.Messaged] run tag @s add bb.Messaged
-execute as @s[advancements={rx:death_cause/void=true},tag=dieMarked,tag=!bb.Messaged] run tellraw @a[x=0] ["", {"selector":"@s"}, " fell due to ", {"selector":"@a[tag=bb.killed,x=0,limit=1]"}]
+execute as @s[advancements={rx:death_cause/void=true},tag=dieMarked,tag=!bb.Messaged] run tellraw @a[x=0] ["", {"selector":"@s"}, " fell in the void due to ", {"selector":"@a[tag=bb.killed,x=0,limit=1]"}]
 execute as @s[advancements={rx:death_cause/void=true},tag=dieMarked,tag=!bb.Messaged] run tag @s add bb.Messaged
 execute as @s[advancements={rx:death_cause/melee=true},tag=dieMarked,tag=!bb.Messaged,tag=!bb.Messaged] run tellraw @a[x=0] ["", {"selector":"@s"}, " was stabbed by ", {"selector":"@a[tag=bb.killed,x=0,limit=1]"}]
 execute as @s[advancements={rx:death_cause/melee=true},tag=dieMarked,tag=!bb.Messaged] run tag @s add bb.Messaged
@@ -30,6 +32,7 @@ tag @a[x=0] remove bb.killed
 tag @s remove bb.Messaged
 tag @s remove dieMarked
 
+team join bb.BiomeBloodshed @a[tag=bb.killed,x=0,limit=1]
 team join bb.BiomeBloodshed @s
 
 setblock 0 127 0 yellow_shulker_box
