@@ -9,7 +9,6 @@ scoreboard players set shrinkDelay bb.Variables 4200
 execute in biomebloodshed:game run scoreboard players set @e[x=0,tag=hub.border] hub.borderSizeChange 0
 execute in biomebloodshed:game run scoreboard players set @e[x=0,tag=hub.border] hub.borderChangeLength 0
 
-execute in biomebloodshed:game run forceload remove all
 execute in biomebloodshed:game as @a[x=0] at @s run playsound minecraft:block.note_block.bell master @s
 
 schedule function biomebloodshed:start/remove_elytra 7s replace
